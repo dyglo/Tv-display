@@ -18,7 +18,9 @@ Chromium with software WebGL (SwiftShader), against `next start`:
 5. Layout: 3840 × 2160 and 390 × 844; controls remain visible, no horizontal overflow, adaptive 4K DPR cap.
 6. Resources: repeated galaxy/nature/room switching returns geometry and texture counts to baseline.
 
-The full browser run passed scenarios 1, 2, 4, 5 and 6. Scenario 3 found a quality-change lifecycle problem; after fixing it, the focused scenario 3 rerun passed (40.4 seconds). The corrected scheduler preserves the WebGL context across quality changes and resumes the native renderer after restoration. Initial verified issues (icon sizing, adaptive DPR reset, TypeScript, lint and render lifecycle) were fixed before deployment.
+The final full browser suite passed all six scenarios in 2.8 minutes. Scenario 3 includes both automatic WebGL restoration and remote Enter-key recovery using Retry. Verified lifecycle problems were fixed by preserving the context across quality changes, cleaning up native listeners, and resuming the scheduler after restoration. Initial icon sizing, adaptive DPR, TypeScript and lint issues were also fixed.
+
+Older TV browsers receive a `100vh` fallback before `100svh`; keyboard focus wrapping avoids `Array.at`. These compatibility changes preserve the tested layout and behavior in current Chromium.
 
 ## Performance
 

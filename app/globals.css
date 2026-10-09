@@ -52,6 +52,7 @@ a {
   text-decoration: none;
 }
 .app {
+  height: 100vh;
   height: 100svh;
   min-height: 730px;
   position: relative;
@@ -560,6 +561,7 @@ footer > div {
 }
 .settings-panel {
   width: 570px;
+  max-height: 92vh;
   max-height: 92svh;
   overflow: auto;
   border: 1px solid #c2c8aa33;
@@ -872,11 +874,13 @@ footer > div {
 }
 @media (max-width: 760px) {
   .app {
+    min-height: 100vh;
     min-height: 100svh;
     height: auto;
   }
   .interface {
     padding: 24px 22px 0;
+    min-height: 100vh;
     min-height: 100svh;
   }
   .brand {
@@ -998,6 +1002,7 @@ footer > div {
     position: absolute;
   }
   .ambient {
+    height: 100vh;
     height: 100svh;
   }
   .scene-vignette {

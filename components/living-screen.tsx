@@ -522,7 +522,7 @@ export default function LivingScreen() {
                 );
                 if (e.shiftKey && index === 0) {
                   e.preventDefault();
-                  items.at(-1)?.focus();
+                  items[items.length - 1]?.focus();
                 } else if (!e.shiftKey && index === items.length - 1) {
                   e.preventDefault();
                   items[0]?.focus();
