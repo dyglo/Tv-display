@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:3000",
+  "viewport": "1920 × 1080",
+  "quality": "Adaptive",
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "scenes": [
+    {
+      "scene": "room",
+      "fps": 3.2,
+      "sampledFPS": 3.3,
+      "dpr": 0.5,
+      "drawCalls": 111,
+      "triangles": 25130,
+      "geometries": 55,
+      "textures": 2,
+      "jsHeapMiB": 10.9
+    },
+    {
+      "scene": "galaxy",
+      "fps": 10.8,
+      "sampledFPS": 10.7,
+      "dpr": 0.5,
+      "drawCalls": 19,
+      "triangles": 10418,
+      "geometries": 21,
+      "textures": 1,
+      "jsHeapMiB": 9.2
+    },
+    {
+      "scene": "nature",
+      "fps": 4.3,
+      "sampledFPS": 4.6,
+      "dpr": 0.5,
+      "drawCalls": 50,
+      "triangles": 9660,
+      "geometries": 35,
+      "textures": 0,
+      "jsHeapMiB": 11.2
+    }
+  ],
+  "errors": []
+}
