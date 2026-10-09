@@ -36,7 +36,11 @@ These are software-renderer results on the cloud test machine, not TCL GPU resul
 
 ## Deployment
 
-Production target: the connected NextQ Vercel team, project `livingscreen`. This is a public display app with no authentication, database, paid APIs or environment secrets. Deployment URL and HTTP/browser checks are recorded after publishing.
+Production target: the connected NextQ Vercel team, project `livingscreen`. This is a public display app with no authentication, database, paid APIs or environment secrets. Production status: READY. Application commit: `5a2f78097e1f485ffa62f6cdf8a33efc6096301c`. Vercel build duration: approximately 79 seconds.
+
+Live URL: https://livingscreen.vercel.app (also https://livingscreen-next-q.vercel.app).
+
+Both production aliases returned HTTP 200 with identical LivingScreen HTML. Browser verification against the production deployment returned HTTP 200, the correct title, active animated Galaxy after scene switching, successful browser fullscreen, no page errors and no failed network requests. The production project has no log drains or external monitoring configured.
 
 ## Required physical TCL testing
 

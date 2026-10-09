@@ -1,5 +1,7 @@
 # LivingScreen
 
+Live: https://livingscreen.vercel.app
+
 A browser-local ambient display for television. Next.js, TypeScript, Tailwind CSS and React Three Fiber. No account, database, external assets or paid APIs.
 
 ## Run
